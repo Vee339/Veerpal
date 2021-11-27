@@ -1,0 +1,667 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*color: #e63946;*/
+	/*border: 2px solid red;*/
+	
+}
+html{
+	font-size: 62.5%;
+	     /* 1rem = 16px = 100%
+	        10px = 62.5% */
+}
+body{
+	background: #f1faee;
+	font-family: 'Forum', cursive;
+	overflow-x: hidden;
+}
+#first-page{
+	width: 100%;
+	height: 1150px;
+	background:#1D3557;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 69%, 0% 100%);
+	position: relative;
+}
+#get-in-touch{
+	z-index: 1000;
+	width: 180px;
+	height: 50px;
+	background:#f1faee;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	border-radius: 50px;
+}
+#get-in-touch a{
+	width: 100%;
+	height: 100%;
+	font-size: 3rem;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: 'Forum', cursive;
+	font-weight: bolder;
+	transition: 0.5s;
+	background:#1D3557;
+	color: #f1faee;
+	border: 2px solid #f1faee;
+}
+#get-in-touch a:hover{
+	color: #1D3557;
+	background:#f1faee;
+	border: 2px solid #1D3557;
+}
+.phrase{
+	position: absolute;
+	top: 6%;
+	left: 8%;
+	font-size: 13rem;
+	line-height: 135px;
+	text-align: center;
+	width: 700px;
+	height: 1100px;
+	text-transform:uppercase;
+	font-family: 'Forum', cursive;
+	color: #f1faee;
+	/*font-family: 'Sacramento', cursive;*/
+}
+.phrase span{
+	color: #f1faee;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	margin-left: 100px;
+}
+#about{
+	width: 100%;
+	height: 950px;
+	background: #f1faee;
+}
+#about .intro{
+	width: 70%;
+	font-size:3rem;
+	text-align: right;
+	float: right;
+	margin: 40px 50px 0 0;
+	color: #1D3557;
+	height: 600px;
+	text-align: left;
+}
+#about .intro .bigtext{
+	font-size: 10rem;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: 'Life Savers', cursive;
+	color: #1D3557;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+}
+#about .intro div.name{
+	margin-bottom: 60px;
+}
+#about .intro div.ima{
+	width: 100%;
+	text-align: right;
+}
+#about .intro .webdeveloper{
+	text-align: right;
+
+}
+#about .description
+,#about .skills{
+	clear: both;
+	font-size: 3rem;
+	color: #457b9d;
+	width: 70%;
+	margin: 0 0 0 140px;
+	font-family: 'Life Savers', cursive;
+}
+#services{
+	width: 900px;
+	height: 900px;
+	background: #1D3557;
+	border-radius: 50%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 4rem;
+	color: #f1faee;
+	font-family: 'Forum', cursive;
+}
+#services h2{
+	margin-bottom: 20px;
+}
+#projects{
+	width: 100%;
+	height: 1000px;
+	background: #a8dadc;
+	margin: 100px 0 0 0 ;
+	clip-path: polygon(0% 0%, 100% 31%, 100% 100%, 0% 100%);
+	padding: 320px 0 0 30px;
+	
+}
+#projects .project-heading{ 
+	color: #1D3557;
+	font-size: 10rem;
+	font-family: 'Life Savers', cursive;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	margin-bottom: 50px;
+}
+/*#projects .collection{
+	padding-left: 50px;
+}
+#projects .collection .project{
+	width: 380px;
+	height: 250px;
+	margin-left: calc(var(--i) * 400px);
+	margin-bottom: 25px;
+	transition: all 0.5s;
+	position: relative;
+}
+#projects .collection .project .name{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 3rem;
+	color: #fff;
+	z-index: 1000;
+}
+#projects .collection .project:hover{
+	filter: brightness(40%);
+}
+#projects .collection .project a{
+	width: 380px;
+	height: 250px;
+}
+#projects .collection .project a img{
+	width: 380px;
+	height: 250px;
+	object-fit: cover;
+}*/
+#projects .project-list{
+	font-size: 8rem;
+	padding-left: 80px;
+
+}
+#projects .project-list ul li{
+	list-style-type: none;
+	line-height: 100px;
+}
+#projects .project-list ul li i{
+	color: #1D3557;
+	margin-right: 20px;
+}
+#projects .project-list ul li a{
+	color: #1D3557;
+}
+#social-links{
+	padding: 60px;
+	height: 800px;
+	width: 100%;
+	color: #1D3557;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(20)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M27.26 5.415c-.55 0-.9.55-.65 1l2.45 4.75c.2.5.85.5 1.15.1l3.15-4.5c.3-.4 0-1.05-.55-1.1zM10.689 8.068c-.406-.051-.822.31-.778.748l.5 5.3c.05.5.6.8 1.05.5l4.55-3.05c.45-.3.4-.95-.05-1.15l-5.1-2.3a.605.605 0 0 0-.172-.048zM2.406 24.584a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm40 0a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm-22.17 3.108a.744.744 0 0 0-.675.723l.4 5.55c.05.5.6.8 1.05.5l4.45-2.95c.45-.25.4-.9-.05-1.15l-4.8-2.6a.702.702 0 0 0-.376-.073z'  stroke-width='1' stroke='none' fill='hsla(182, 43%, 76%, 0.52)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+#social-links .combined{
+	width: 65%;
+	float: right;
+}
+#social-links .social-heading{
+	font-size: 10rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	margin-top: 80px;
+	float: right;
+	font-family: 'Life Savers', cursive;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+}
+#social-links ul{
+	float: right;
+}
+#social-links ul li{
+	list-style-type: none;
+	margin-left: 50px;
+}
+#social-links ul li a{
+	color: #1D3557;
+	font-size: 8rem;
+}
+#social-links ul li i{
+	margin-right: 20px;
+	font-size: 8rem;
+
+}
+
+/*------------------------------- styling of cursors -----------------------------*/
+.inner-cursor{
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border-radius: 50%;
+	mix-blend-mode: difference;
+	transition: width 0.5s, height 0.5s;
+	z-index: 100000;
+	pointer-events: none;
+}
+.inner-cursor.grow{
+	width: 40px;
+	height: 40px;
+	transition: width 0.5s, height 0.5s;
+
+}
+.outer-cursor{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	transform: translate(-50%,-50%);
+	border: 2px solid #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+	z-index: 10000;
+
+}
+
+/*------------------------------------------- styling of mail me page -------------------------------------*/
+.back{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 30px;
+	right: 60px;
+}
+.back a{
+	text-decoration: none;
+}
+.back a img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.form{
+	margin-top: 0;
+	font-size: 3rem;
+	width: 500px;
+	min-height: 690px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    background: #f1faee;
+    color: #1D3557;
+    padding:20px;
+    border-radius: 10px;
+}
+.form div{
+	margin-bottom: 30px;
+}
+.form input{
+	width: 100%;
+	height: 40px;
+	font-size: 2rem;
+	border: none;
+	outline: none;
+	color: #1D3557;
+	padding: 10px;
+	background: #f1faee;
+	font-family: 'Life Savers', cursive;
+	font-weight: bolder;
+	border-bottom: 1px solid #1D3557;
+}
+
+.form textarea{
+	width: 100%;
+	min-height: 220px;
+	border: 1px solid #1D3557;
+	border-bottom: 1px solid #1D3557;
+
+	outline: none;
+	font-size: 2rem;
+	color: #1D3557;
+	resize: vertical;
+	padding: 10px;
+	background: #f1faee;
+	font-family: 'Life Savers', cursive;
+	font-weight: bolder;
+}
+.form .message label{
+	display: block;
+	margin-bottom: 10px;
+}
+.form .send input{
+	color: #f1faee;
+	background: #1D3557;
+    cursor: pointer;
+    border: 1px solid #1D3557;
+    text-transform: uppercase;
+    font-family: 'Forum', cursive;
+    letter-spacing: 30px;
+    transition:all 0.3s ;
+}
+.form .send input:hover{
+	background: #0c1624;
+	color: #f1faee;
+	border: 1px solid #f1faee;
+}
+
+/*----------------------------------- Responsiveness for different screens--------------------------------*/
+@media screen and (max-width: 1250px){
+	html{
+		font-size: 55%;
+	}
+    #first-page{
+	    height: 900px;
+	    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 0% 100%);
+    }
+    #about .intro{
+    	height: 500px;
+    }
+    #about .description
+   ,#about .skills{
+	    width: 70%;
+	    margin: 0 0 0 60px;
+    }
+    #about .skills{
+    	height: 150px;
+    	word-wrap: break-word;
+    }
+    #services{
+    	width: 800px;
+    	height: 800px;
+    }
+    #projects{
+    	height: 750px;
+    	margin: 0;
+	    clip-path: polygon(0% 0%, 100% 26%, 100% 100%, 0% 100%);
+	    padding: 210px 0 0 30px;
+    }
+    #projects .project-heading{
+	    font-size: 8rem;
+	    margin-bottom: 50px;
+    }
+    #social-links{
+    	height: 750px;
+    }
+    #social-links .combined{
+	    width: 75%;
+	    float: right;
+    }
+}
+@media screen and (max-width: 950px){
+    #about{
+	    width: 100%;
+	    height: 1050px;
+	    background: #f1faee;
+    }
+    #about .intro{
+    	height: 650px;
+    }
+    #services{
+    	width: 670px;
+    	height: 670px;
+    } 
+    #projects .project-list{
+    	font-size: 6rem;
+    	padding-left: 20px;
+    }
+
+     #social-links .combined{
+	    width: 95%;
+	    float: right;
+    }
+    #social-links .social-heading{
+	    font-size: 8rem;
+    }
+
+}
+@media screen and (max-width: 762px){
+	#first-page{
+		height: 850px;
+	}
+	.phrase{
+	    top: 15%;
+	    left: 8%;
+	    font-size: 10rem;
+	    line-height: 122px;
+	    text-align: center;
+	    width: 550px;
+	    height: 700px;
+    }
+    .phrase span{
+	    margin-left: 50px;
+	    margin-right: 50px;
+    }
+	#about .intro{
+	    width: 90%;
+	    font-size:3rem;
+	    text-align: right;
+	    float: right;
+	    margin: 40px 50px 0 0;
+	    color: #1D3557;
+	    height: 600px;
+	    text-align: left;
+    }
+    #about .description
+   ,#about .skills{
+   	    width: 90%;
+   	    margin: 0 0 0 20px;
+   }
+   #services{
+   	    transform: translateX(-5%);
+   }
+   #projects{
+        height: 780px;
+        clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+   }
+   #projects .project-list{
+	    font-size: 4.5rem;
+    }
+   #projects .project-list ul li{
+	    line-height: 70px;
+    }
+    #social-links{
+	    padding: 30px 0 30px 30px;
+	    height: 600px;
+    }
+    #social-links .combined{
+	    width: 100%;
+	    float: left;
+    }
+    #social-links .social-heading{
+	    font-size: 8rem;
+	    margin-top: 20px;
+	    margin-bottom: 70px;
+	    float: none;
+    }
+    #social-links ul{
+	    float: left;
+    }
+    #social-links ul li{
+	    margin-left: 30px;
+    }
+    #social-links ul li a{
+	    font-size: 4.5rem;
+    }
+    #social-links ul li i{
+	    margin-right: 10px;
+	    font-size: 4.5rem;
+    } 
+}
+@media screen and (max-width: 640px){
+    #first-page{
+	    height: 850px;
+    }
+    .phrase{
+	    top: 10%;
+	    left: 3%;
+	    font-size: 10rem;
+	    line-height: 122px;
+	    text-align: center;
+	    width: 90%;
+	    height: 700px;
+    }
+    .phrase span{
+	    margin-left: 50px;
+	    margin-right: 50px;
+    }
+    
+    #services{
+    	width: 600px;
+    	height: 600px;
+    }
+}
+@media screen and (max-width: 550px){
+	.inner-cursor{
+		display: none;
+	}
+	.outer-cursor{
+		display: none;
+	}
+	#first-page{
+	    height: 650px;
+    }
+    .phrase{
+	    top: 12%;
+	    left: 10%;
+	    font-size: 6rem;
+	    line-height: 80px;
+	    text-align: center;
+	    width: 70%;
+	    height: 700px;
+    }
+    .phrase span{
+	    margin-left: 50px;
+	    margin-right: 50px;
+    }
+    #about{
+    	height: 900px;
+    }
+    #about .intro{
+      	width: 90%;
+     	font-size:3rem;
+    	text-align: right;
+	    float: right;
+	    margin: 0;
+	    height: 500px;
+	    padding-right: 20px;
+    } 
+    #about .intro .bigtext{
+    	font-size: 7rem;
+    } 
+    #about .description
+    ,#about .skills{
+	    clear: both;
+	    font-size: 3rem;
+	    width: 95%;
+	    margin: 0 20px;
+    }
+    #services{
+    	width: 510px;
+    	height: 510px;
+    	transform: translateX(-25%);
+    	font-size: 3rem;
+    	padding-left: 155px;
+    	align-items: flex-start;
+    }
+    #projects{
+    	height: 900px;
+    	padding-left: 10px;
+    }
+}
+@media screen and (max-width: 490px){
+	#get-in-touch{
+		top: 2%;
+	}
+    .phrase{
+    	left: 5%;
+    	width: 90%;
+    }
+}
+@media screen and (max-width: 390px){
+	#first-page{
+	    height: 740px;
+    }
+	.phrase{
+	    top: 18%;
+	    left: 8%;
+	    font-size: 5rem;
+	    line-height: 80px;
+	    text-align: center;
+	    width: 90%;
+	    height: 400px;
+    }
+    .phrase span{
+	    margin-left: 50px;
+	    margin-right: 50px;
+    }
+	#about{
+		height: 1030px;
+	}
+	#about .intro{
+      	width: 100%;
+	    padding-right: 0;
+    } 
+    #about .intro .bigtext{
+    	font-size: 4.5rem;
+    }
+    #services{
+    	padding-left: 120px;
+    	width: 430px;
+    	height: 430px;
+    }
+    #projects .project-heading{
+    	font-size: 6rem;
+    }
+    @media screen and (max-width: 340px){
+    	.phrase{
+    		top: 8%;
+    		height: 700px;
+    	}
+    	#about{
+		    height: 1150px;
+	    }
+	    #services{
+    	    padding-left: 100px;
+    	    width: 360px;
+    	    height: 360px;
+    	    font-size: 2.3rem;
+        }
+        #services h2{
+        	transform: translateX(-15px);
+        }
+        #projects .project-heading{
+    	    font-size: 5rem;
+        }
+        #projects .project-list{
+	        font-size: 3.5rem;
+        }
+        #social-links .social-heading{
+        	font-size: 5rem;
+        }
+        #social-links .combined{
+	        width: 100%;
+        }
+        #social-links ul li{
+	        margin-left: 10px;
+        }
+        #social-links ul li a{
+	        font-size: 3.5rem;
+        }
+        #social-links ul li i{
+	        margin-right: 10px;
+	        font-size: 3.5rem;
+        } 
+    }
